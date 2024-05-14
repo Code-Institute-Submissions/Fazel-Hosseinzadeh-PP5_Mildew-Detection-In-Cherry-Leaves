@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-def say_hi():
-    st.write("Hello!")
+def page_1_project_summary_content():
+    pass
 
     
