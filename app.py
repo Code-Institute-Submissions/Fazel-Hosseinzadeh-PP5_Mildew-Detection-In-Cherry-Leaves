@@ -10,7 +10,7 @@ from app_pages.page_5_ML_metrics import page_5_ML_metrics_content
 
 
 
-app = MultiPage(app_name="Cherry Leaves Mildew Detector")  # Create an instance of the app
+app = MultiPage(app_name="Cherry Leaves Powdery Mildew Detector")  # Create an instance of the app
 
 # Add pages to app using add_page method
 app.add_page("Quick Project Summary", page_1_project_summary_content)
