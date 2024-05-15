@@ -15,4 +15,20 @@ def page_5_ML_metrics_content():
     st.image(labels_distribution, caption='Labels Distribution on Train, Validation and Test Sets')
     st.write("---")
     
+    st.info(f"### **Model Learning Curve **")
+    st.warning(f"The learning curve graph illustrates the model's performance on "
+               f"both training and validation datasets over successive epochs, "
+               f"highlighting trends such as underfitting, overfitting, and "
+               f"optimal learning.\n\n This helps in evaluating how well the model "
+               f"generalizes to unseen data.")
+    
+    # Load model learning curve Accuracy and Loss
+    col1, col2 = st.beta_columns(2)
+    with col1: 
+        model_acc = plt.imread(f"outputs/{version}/model_training_acc.png")
+        st.image(model_acc, caption='Model Traninig Accuracy')
+    with col2:
+        model_loss = plt.imread(f"outputs/{version}/model_training_losses.png")
+        st.image(model_loss, caption='Model Traninig Losses')
+    st.write("---")
     
