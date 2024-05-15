@@ -3,7 +3,7 @@ import streamlit as st
 
 def page_4_project_hypothesis_content():
     st.write(f"## **Project Hypothese** ")
-    st.info(f"### Hypothesis 1: Visual Identification of Powdery Mildew ")
+    st.info(f"### **Hypothesis 1: Visual Identification of Powdery Mildew**")
     st.success(
             f"We hypothesize that there are distinct visual markers on cherry leaves that can help differentiate between healthy leaves and those affected by powdery mildew.\n\n"
             f"Affected leaves typically exhibit white or gray powdery spots on their surfaces, which are not present on healthy leaves.\n\n"
