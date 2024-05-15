@@ -6,6 +6,8 @@ import pandas as pd
 import joblib
 from tensorflow.keras.models import load_model
 import plotly.express as px
+import base64
+from datetime import datetime
 
 
 
@@ -40,9 +42,15 @@ def page_3_Live_detector_content():
             plot_predictions_probabilities(pred_proba, pred_class)
 
             
+            # Download the report
+            df_report = df_report.append({"Name":image.name, 'Result': pred_class },
+                                        ignore_index=True)
+            
         
         if not df_report.empty:
-            pass
+            st.success("Analysis Report")
+            st.table(df_report)
+            st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
 
 
 def resize_input_image(img, version):  
@@ -102,3 +110,14 @@ def plot_predictions_probabilities(pred_proba, pred_class):
             width=600, height=300,template='seaborn')
     st.plotly_chart(fig)
 
+
+def download_dataframe_as_csv(df):
+
+    datetime_now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
+    csv = df.to_csv().encode()
+    b64 = base64.b64encode(csv).decode()
+    href = (
+        f'<a href="data:file/csv;base64,{b64}" download="Report {datetime_now}.csv" '
+        f'target="_blank">Download Report</a>'
+    )
+    return href
