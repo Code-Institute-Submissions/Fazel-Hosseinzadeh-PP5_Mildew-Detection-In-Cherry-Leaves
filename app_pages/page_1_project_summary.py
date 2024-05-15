@@ -7,14 +7,14 @@ def page_1_project_summary_content():
     st.write(f"---")
     st.info(f"### **About The Project**")
     
-    st.warning(  
+    st.success(  
         f"Powdery mildew is a fungal disease that affects cherry trees, causing significant yield loss.\n\n"
         f"This quick project aims to develop a user-friendly app to detect powdery mildew in cherry leaves using image recognition.\n\n"
         f"By uploading an image, you can potentially identify the health of your cherry leaves and take early action to protect your trees."
         )
     st.write(f"---")
     st.info(f"### **Project Dataset**")
-    st.warning(
+    st.success(
         f"The dataset contains 4208 cherry leaf images from Kaggle: 2104 healthy and 2104 with powdery mildew.\n\n"
         f"Leaves individually photographed."
         )

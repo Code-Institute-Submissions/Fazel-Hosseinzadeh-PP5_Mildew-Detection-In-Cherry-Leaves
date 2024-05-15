@@ -11,7 +11,7 @@ import random
 
 def page_2_Leaves_Study_content():
     st.write("## **Leaves study**")
-    st.warning(
+    st.success(
         f"* The client is interested in having a study that visually "
         f"differentiates a powdery-mildew leaf from an healthy leaf.")
     st.write("---")
@@ -23,7 +23,7 @@ def page_2_Leaves_Study_content():
       avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
       avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
-      st.warning(
+      st.success(
         f"* We notice the average and variability images did not show "
         f"patterns where we could intuitively differentiate one from another.")
 
@@ -34,7 +34,7 @@ def page_2_Leaves_Study_content():
     if st.checkbox("Differences between average powdery-mildew and average healthy leaves"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
-          st.warning(
+          st.success(
             f"* We notice this study didn't show "
             f"patterns where we could intuitively differentiate one from another.")
           st.image(diff_between_avgs, caption='Difference between average images')

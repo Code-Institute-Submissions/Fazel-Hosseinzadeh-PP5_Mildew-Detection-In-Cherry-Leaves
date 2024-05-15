@@ -17,7 +17,7 @@ def page_5_ML_metrics_content():
     st.write("---")
     
     st.info(f"### **Model Learning Curve **")
-    st.warning(f"The learning curve graph illustrates the model's performance on "
+    st.success(f"The learning curve graph illustrates the model's performance on "
                f"both training and validation datasets over successive epochs, "
                f"highlighting trends such as underfitting, overfitting, and "
                f"optimal learning.\n\n This helps in evaluating how well the model "
@@ -34,7 +34,7 @@ def page_5_ML_metrics_content():
     st.write("---")
     
     st.info(f"### **Model Performance with Restored Loss And Accuracy**")
-    st.warning(f"Evaluating Loss and Accuracy Scores after Training.")
+    st.success(f"Evaluating Loss and Accuracy Scores after Training.")
     
     evaluation = joblib.load(filename=f'outputs/{version}/evaluation.pkl')
     st.dataframe(pd.DataFrame(evaluation, index=['Loss', 'Accuracy']))
