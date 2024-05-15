@@ -3,26 +3,25 @@ import streamlit as st
 
 def page_1_project_summary_content():
 
-    st.write("### Quick Project Summary")
-    st.info(
-        f"**About The Project**\n\n"
+    st.write("## **Quick Project Summary**")
+    st.write(f"---")
+    st.info(f"### **About The Project**")
+    
+    st.warning(  
         f"Powdery mildew is a fungal disease that affects cherry trees, causing significant yield loss.\n\n"
         f"This quick project aims to develop a user-friendly app to detect powdery mildew in cherry leaves using image recognition.\n\n"
-        f"By uploading an image, you can potentially identify the health of your cherry leaves and take early action to protect your trees.\n\n"
+        f"By uploading an image, you can potentially identify the health of your cherry leaves and take early action to protect your trees."
         )
-
+    st.write(f"---")
+    st.info(f"### **Project Dataset**")
     st.warning(
-        f"\n\n"
-        f"**Project Dataset**\n\n"
         f"The dataset contains 4208 cherry leaf images from Kaggle: 2104 healthy and 2104 with powdery mildew.\n\n"
-        f"Leaves individually photographed.\n\n"
-
-
-        f"\n\n"
+        f"Leaves individually photographed."
         )
-
+    st.write(f"---")
+    st.info(f"### **Bussiness Requirements**")
     st.success(
-        f"**Bussiness Requirements**\n\n"
+        
         f"The project has 2 business requirements:\n\n"
 
         f" - 1 - The client is interested in having a study to differentiate a powdery-mildew cheary leaf and a healthy cherry leaf visually.\n\n"
