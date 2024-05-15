@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 import joblib
 from tensorflow.keras.models import load_model
+import plotly.express as px
+
 
 
 def page_3_Live_detector_content():
@@ -35,11 +37,13 @@ def page_3_Live_detector_content():
             version = 'v1'
             resized_img = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
+            plot_predictions_probabilities(pred_proba, pred_class)
 
             
         
         if not df_report.empty:
             pass
+
 
 def resize_input_image(img, version):  
     """
@@ -69,6 +73,32 @@ def load_model_and_predict(my_image, version):
 
     st.write(
         f"The predictive analysis indicates the sample leave is "
-        f"**{pred_class.lower()}** with malaria.")
+        f"**{pred_class.lower()}**.")
     
     return pred_proba, pred_class
+
+
+def plot_predictions_probabilities(pred_proba, pred_class):
+    """
+    Plot prediction probability results
+    """
+
+    prob_per_class= pd.DataFrame(
+            data=[0,0],
+            index={'helthy': 0, 'powdery_mildew': 1}.keys(),
+            columns=['Probability']
+        )
+    prob_per_class.loc[pred_class] = pred_proba
+    for x in prob_per_class.index.to_list():
+        if x not in pred_class: prob_per_class.loc[x] = 1 - pred_proba
+    prob_per_class = prob_per_class.round(3)
+    prob_per_class['Diagnostic'] = prob_per_class.index
+    
+    fig = px.bar(
+            prob_per_class,
+            x = 'Diagnostic',
+            y = prob_per_class['Probability'],
+            range_y=[0,1],
+            width=600, height=300,template='seaborn')
+    st.plotly_chart(fig)
+
