@@ -4,6 +4,7 @@ from PIL import Image
 import numpy as np
 import pandas as pd
 
+
 def page_3_Live_detector_content():
     
     st.write(f"## **Live detector**")
@@ -19,5 +20,8 @@ def page_3_Live_detector_content():
     images_buffer = st.file_uploader('Upload cherry leaves samples. You may select more than one.',
                                         type='JPG',accept_multiple_files=True)
     
-
-    
+   
+    if images_buffer is not None:
+        df_report = pd.DataFrame([])
+        for image in images_buffer:
+            print(f"{image}")
