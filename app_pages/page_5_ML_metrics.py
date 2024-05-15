@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.image import imread
+import joblib
 
 def page_5_ML_metrics_content():
     st.write(f"## **Machine Learning Metrics**")
@@ -32,3 +33,8 @@ def page_5_ML_metrics_content():
         st.image(model_loss, caption='Model Traninig Losses')
     st.write("---")
     
+    st.info(f"### **Model Performance with Restored Loss And Accuracy**")
+    st.warning(f"Evaluating Loss and Accuracy Scores after Training.")
+    
+    evaluation = joblib.load(filename=f'outputs/{version}/evaluation.pkl')
+    st.dataframe(pd.DataFrame(evaluation, index=['Loss', 'Accuracy']))
