@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 import pandas as pd
 import joblib
-
+from tensorflow.keras.models import load_model
 
 
 def page_3_Live_detector_content():
@@ -32,10 +32,11 @@ def page_3_Live_detector_content():
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
             
-            
             version = 'v1'
             resized_img = resize_input_image(img=img_pil, version=version)
+            pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
 
+            
         
         if not df_report.empty:
             pass
@@ -50,3 +51,24 @@ def resize_input_image(img, version):
     my_image = np.expand_dims(img_resized, axis=0)/255
 
     return my_image
+
+
+def load_model_and_predict(my_image, version):
+    """
+    Load and perform ML prediction over live images
+    """
+
+    model = load_model(f"outputs/{version}/cherry-leaves-mildew-detector-model.h5")
+
+    pred_proba = model.predict(my_image)[0,0]
+
+    target_map = {v: k for k, v in {'helthy': 0, 'powdery_mildew': 1}.items()}
+    pred_class =  target_map[pred_proba > 0.5]  
+    if pred_class == target_map[0]: pred_proba = 1 - pred_proba
+
+
+    st.write(
+        f"The predictive analysis indicates the sample leave is "
+        f"**{pred_class.lower()}** with malaria.")
+    
+    return pred_proba, pred_class
