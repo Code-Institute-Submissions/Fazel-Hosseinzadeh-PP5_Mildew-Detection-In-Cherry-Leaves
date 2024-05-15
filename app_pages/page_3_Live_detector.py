@@ -24,4 +24,11 @@ def page_3_Live_detector_content():
     if images_buffer is not None:
         df_report = pd.DataFrame([])
         for image in images_buffer:
-            print(f"{image}")
+
+            img_pil = (Image.open(image))
+            st.info(f"Cherry Leaf Sample: **{image.name}**")
+            img_array = np.array(img_pil)
+            st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
+        
+        if not df_report.empty:
+            pass
