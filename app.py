@@ -16,7 +16,7 @@ app = MultiPage(app_name="Cherry Leaves Powdery Mildew Detector")  # Create an i
 app.add_page("Quick Project Summary", page_1_project_summary_content)
 app.add_page("Leaves Study", page_2_Leaves_Study_content)
 app.add_page("Live Test", page_3_Live_detector_content)
-app.add_page("Project Hypothesis", page_4_project_hypothesis_content)
+app.add_page("Project Hypotheses", page_4_project_hypothesis_content)
 app.add_page("Machine Learning Metrics", page_5_ML_metrics_content)
 
 
