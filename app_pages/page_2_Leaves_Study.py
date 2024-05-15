@@ -10,21 +10,22 @@ import itertools
 import random
 
 def page_2_Leaves_Study_content():
-    st.write("### Leaves study")
-    st.info(
+    st.write("## **Leaves study**")
+    st.warning(
         f"* The client is interested in having a study that visually "
         f"differentiates a powdery-mildew leaf from an healthy leaf.")
-    
+    st.write("---")
+    st.write("## **Select Your Analysis Options**")
+    st.info(f"### **Choose from the following options to customize your study:**")
     version = 'v1'
-    if st.checkbox("Difference between average and variability image"):
+    if st.checkbox(f"Difference between average and variability image"):
       
       avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
       avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
         f"* We notice the average and variability images did not show "
-        f"patterns where we could intuitively differentiate one from another. " 
-        f"However, a small difference in the colour pigment of the average images is seen for both labels.")
+        f"patterns where we could intuitively differentiate one from another.")
 
       st.image(avg_powdery_mildew, caption='Powdery-mildew Leaf - Average and Variability')
       st.image(avg_healthy, caption='Healthy Leaf - Average and Variability')
