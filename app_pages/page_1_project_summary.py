@@ -28,4 +28,5 @@ def page_1_project_summary_content():
         f" - 2 - The client is interested in telling whether a given cherry leaf picture is a powdery-mildew cheary leaf and a healthy cherry leaf.\n\n"
 
         )
-     
+    st.write(f"* More information available [hear](https://github.com/Fazel-Hosseinzadeh/PP5_Mildew-Detection-In-Cherry-Leaves/blob/main/README.md) ")
+    
