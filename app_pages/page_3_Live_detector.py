@@ -3,6 +3,8 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import pandas as pd
+import joblib
+
 
 
 def page_3_Live_detector_content():
@@ -29,6 +31,22 @@ def page_3_Live_detector_content():
             st.info(f"Cherry Leaf Sample: **{image.name}**")
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
+            
+            
+            version = 'v1'
+            resized_img = resize_input_image(img=img_pil, version=version)
+
         
         if not df_report.empty:
             pass
+
+def resize_input_image(img, version):  
+    """
+    Reshape image to average image size
+    """
+    file_path = f"outputs/{version}/image_shape.pkl"
+    image_shape = joblib.load(filename=file_path)
+    img_resized = img.resize((image_shape[1], image_shape[0]), Image.LANCZOS)
+    my_image = np.expand_dims(img_resized, axis=0)/255
+
+    return my_image
