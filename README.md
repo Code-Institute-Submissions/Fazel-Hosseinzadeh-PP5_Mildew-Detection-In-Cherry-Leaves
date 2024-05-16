@@ -13,6 +13,7 @@
 1.  [Intrudoction](#intruduction)
 2.  [Dataset Content](#dataset-content)
 3.  [Business Requirements](#business-requirements)
+4.  [Hypotheses and how to Validate](#hypotheses-and-how-to-validate)
 
 
 ********************
@@ -84,6 +85,67 @@ The IT team has suggested implementing a Machine Learning (ML) system that can i
     *   Use a dataset of cherry leaf images provided by Farmy & Foods.
 
     *   Implement a neural network model to map the relationship between image features and labels (healthy vs. powdery mildew).
+
+[Table Of Contents](#table-of-contents)
+********************
+
+###  Hypotheses and how to Validate
+
+**Hypothesis 1: Differentiation of Infected Leaves**
+
+**Hypothesis:** Infected leaves exhibit distinct marks that differentiate them from healthy leaves.
+
+**Validation Approach:**
+
+1.  **Image Dataset Collection:** Gather images of both healthy and powdery mildew-affected cherry leaves.
+
+**Healthy Leaf Sample**
+
+![Healthy Leaf Sample](/readme-images/healthy.jpg)
+
+**Powdery-Mildew Leaf Sample**
+
+![Pwdery-Mildew Leaf Sample](/readme-images/mildew.jpg)
+
+2.  **Image Montage Creation:** Create image montages to visually compare healthy and infected leaves.
+
+**Montage**
+![montage](/readme-images/montage.jpg)
+
+
+3. **Average Image Analysis:** Generate average images for healthy and infected leaves to identify common visual patterns.
+
+**Average Image for Healthy and Infected Leaves**
+![montage](/readme-images/ave-difference.jpg)
+
+4.  **Statistical Analysis:** Analyze the difference between average images of healthy and infected leaves.
+**Difference Between Average Images of Healthy and Infected Leaves**
+![montage](/readme-images/difference.jpg)
+
+**Observations:**
+-   Powdery mildew manifests as white, dusty patches on leaves.
+
+-   Healthy leaves have a rich, dark green color.
+
+-   Infected leaves show light, roughly-circular, powdery patches.
+
+-   Average images for infected leaves reveal more white stripes, but variability images did not show a definitive pattern.
+
+**Hypothesis 2: Machine Learning Model Performance**
+
+**Hypothesis:** A machine learning model can accurately differentiate between healthy and powdery mildew-affected cherry leaves with a precision of at least 97%.
+
+**Validation Approach:**
+1.  **Model Development:** Build and train a Convolutional Neural Network (CNN) on the collected dataset.
+
+2.  **Model Evaluation:** Validate the model's performance using metrics like accuracy, model learning curve,generalized model and overfitting underfitting.
+
+3. **Cross-Validation:** Apply cross-validation techniques to ensure generalizability.
+
+*   **Observations:**
+    -   The model achieved a high degree of accuracy (up to 99%) in distinguishing between healthy and infected leaves.
+
+    -   Performance metrics indicated reliable predictions with a recall of 99% for powdery mildew detection.
 
 [Table Of Contents](#table-of-contents)
 ********************
