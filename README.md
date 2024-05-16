@@ -18,6 +18,7 @@
 6.  [Project Workflow CRISP-DM Approach](#project-workflow-crisp-dm-approach)
 7.  [ML Business Case](#ml-business-case)
 8.  [User Story](#user-story)
+9.  [Dashboard Design Using Streamlit](#dashboard-design-using-streamlit)
 
 
 ********************
@@ -264,6 +265,75 @@ To address these user stories, we developed an interactive Streamlit dashboard a
     *   Seamless upload of cherry leaf images in .jpeg format, supporting multiple uploads up to 200MB total size.
     *   Display of uploaded images alongside prediction statements indicating infection status (healthy or infected with powdery mildew) and associated probabilities.
     *   Provision of a downloadable report summarizing the machine learning predictions on new leaves, facilitating documentation and analysis for future reference.
+
+[Table Of Contents](#table-of-contents)
+********************
+
+### Dashboard Design Using Streamlit
+**Page 1: Quick Project Summary**
+
+**About The Project:**
+Summary of the project's goal to develop an app for detecting powdery mildew in cherry leaves using image recognition.
+
+**Project Dataset:**
+Overview of the dataset containing cherry leaf images.
+
+**Business Requirements:**
+Outline of the two main business requirements for the project.
+
+![Quick Project Summary](/readme-images/page1.jpg)
+
+**Page 2: Leaves Study**
+
+**Study Introduction:**
+Overview of the client's interest in visually differentiating powdery-mildew leaves from healthy ones.
+
+**Analysis Options:**
+Selection of options for customizing the study, including differences in average and variability, between average powdery-mildew and healthy leaves, and image montage.
+
+![Leaves Study](/readme-images/page2.jpg)
+
+**Page 3: Live Test**
+
+**Test Introduction:**
+Explanation of the live test feature allowing users to upload cherry leaf photos for instant analysis.
+
+**Upload Widget:**
+User interface for uploading leaf images.
+Prediction Display: Display of the uploaded image with a prediction statement indicating infection status and probability.
+
+**Report Generation:**
+Information on downloading a report containing image names and prediction results.
+
+![Live Test](/readme-images/page3.jpg)
+
+**Page 4: Project Hypotheses and Validation**
+
+**Hypothesis 1:**
+Detailing the hypothesis of visual identification of powdery mildew on cherry leaves.
+
+**Hypothesis 2:**
+Detailing the hypothesis of using machine learning for automated detection.
+
+**Validation:**
+Explanation of how each hypothesis was tested and the resulting conclusions.
+
+![Project Hypotheses](/readme-images/page4.jpg)
+
+**Page 5: ML Metrics**
+
+**Label Distribution:**
+Table displaying label frequencies for each dataset bin.
+
+**Model Learning Curve:**
+Graph illustrating the model's performance trends during training and validation.
+
+**Performance Evaluation:**
+Details of the model's loss and accuracy scores after training.
+
+![Machine Learning Metrics](/readme-images/page5-1.jpg)
+
+![Machine Learning Metrics](/readme-images/page5-2.jpg)
 
 [Table Of Contents](#table-of-contents)
 ********************
