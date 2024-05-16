@@ -416,3 +416,24 @@ Details of the model's loss and accuracy scores after training.
 
 [Table Of Contents](#table-of-contents)
 ********************
+
+### Frameworks and libraries Used
+
+*   GitHub was used for version control
+*   Kaggle was the source of the dataset.
+*   Jupyter Notebook was used to run the machine learning. *pipeline*.
+*   Joblib for saving and loading image shape.
+*   NumPy was used to convert images into an array.
+*   Pandas was used for data analysis and manipulation.
+*   Matplotlib was used to create charts and plots.
+*   Seaborn was used for data visualization.
+*   Plotly was used to create charts and plots.
+*   Streamlit was used to create the dashboard.
+*   Scikit-learn was used as a machine learning library.
+*   Tensorflow was used as a machine learning library.
+*   Keras was used as a machine learning library.
+*   Heroku was used to deploy the site.
+
+
+[Table Of Contents](#table-of-contents)
+********************
