@@ -14,7 +14,7 @@
 2.  [Dataset Content](#dataset-content)
 3.  [Business Requirements](#business-requirements)
 4.  [Hypotheses and how to Validate](#hypotheses-and-how-to-validate)
-
+5.  [Aligning Business Needs with Visualizations and ML](#aligning-business-needs-with-visualizations-and-ml)
 
 ********************
 
@@ -148,3 +148,34 @@ The IT team has suggested implementing a Machine Learning (ML) system that can i
 [Table Of Contents](#table-of-contents)
 ********************
 
+### Aligning Business Needs with Visualizations and ML
+
+**Business Requirements and Mapping:**
+
+1.    **Visually differentiate cherry leaves:**
+*   **Client Need:** 
+Farmy & Foods aims to visually differentiate between healthy cherry leaves and those affected by powdery mildew. This is crucial for quality control and disease management in their cherry farming operations.
+
+*   **Mapped Tasks:**
+
+    *   **Image Montage:** Utilizing the Cherry Leaves Visualizer page, **"LEAVES STUDY"**, the application will compile visual montages showcasing healthy and infected leaves, allowing easy visual comparison.
+
+    *   **Average vs. Variability Imagery:** Through visualizations, users can discern differences in color consistency and patterns between healthy and infected leaves.
+    
+    *   **Difference in Average Imagery:** Providing comparisons of average images highlights visual disparities between healthy and infected leaves.
+
+2.  **Predict leaf health:** 
+    *   **Client Need:** Farmy & Foods requires a robust machine learning model to accurately predict whether a cherry leaf is healthy or infected with powdery mildew. This predictive capability streamlines disease detection and enables proactive management strategies.
+
+    *   **Mapped Tasks:** 
+        *   **Real-time Prediction:** The Powdery Mildew Detector page offers a user-friendly interface for uploading cherry leaf images and receiving instant predictions on their health status.
+
+        *   **Model Performance Metrics:** The Machine Learning Performance Indicators page provides insights into the model's accuracy, losses, and overall performance, ensuring stakeholders are informed about the model's reliability.
+
+        *   **Model Validation:** Rigorous validation procedures ensure the model's robustness and generalization capabilities, crucial for real-world applications.
+
+        *   **Additional Insights (Future Consideration):** Potential expansion to include economic implications of undetected infections, highlighting revenue loss due to compromised leaf quality.
+
+
+[Table Of Contents](#table-of-contents)
+********************
