@@ -109,17 +109,15 @@ The IT team has suggested implementing a Machine Learning (ML) system that can i
 
 2.  **Image Montage Creation:** Create image montages to visually compare healthy and infected leaves.
 
-**Montage**
 ![montage](/readme-images/montage.jpg)
 
 
 3. **Average Image Analysis:** Generate average images for healthy and infected leaves to identify common visual patterns.
 
-**Average Image for Healthy and Infected Leaves**
 ![montage](/readme-images/ave-difference.jpg)
 
 4.  **Statistical Analysis:** Analyze the difference between average images of healthy and infected leaves.
-**Difference Between Average Images of Healthy and Infected Leaves**
+
 ![montage](/readme-images/difference.jpg)
 
 **Observations:**
