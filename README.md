@@ -20,6 +20,7 @@
 8.  [User Story](#user-story)
 9.  [Dashboard Design Using Streamlit](#dashboard-design-using-streamlit)
 10. [Unfixed Bugs](#unfixed-bugs)
+11. [Deployment](#deployment)
 
 
 ********************
@@ -344,6 +345,74 @@ Details of the model's loss and accuracy scores after training.
 *   There are no known unfixed bugs.
 
 
+
+[Table Of Contents](#table-of-contents)
+********************
+
+### Deployment
+
+**Creating a Heroku App:**
+
+1.   **Log in to Heroku:**
+
+*   If you don't have an account, sign up. Otherwise, log in to your existing account.
+
+2.  **Create a New App:**
+
+    In your Profile, Click on the 'New' button in the top right corner.
+
+    Select 'Create new app' from the drop-down menu.
+
+    Choose a unique and meaningful name for your app.
+
+    Select the region closest to your location.
+
+    Click 'Create app'.
+
+3. **Deploying in Heroku:**
+
+-   **Ensure Dependencies:**
+
+    Check that your requirements.txt file includes all necessary dependencies for the app.
+
+-   **Set the Stack to Heroku-20:**
+
+    Navigate to 'Account Settings' from the avatar menu.
+    Find the 'API Key' section, reveal the key, and copy it.
+
+    In your command line interface, log in to Heroku using heroku login -i.
+
+    Enter your email and paste the copied API key when prompted.
+
+    Set the stack to Heroku-20 with the command heroku stack:set heroku-20 -a yourappname, replacing 'yourappname' with your app's name.
+
+    **Runtime Configuration:**
+
+    Ensure that your runtime.txt file specifies a Python version supported by the Heroku-20 stack.IN this case Python -3.8.19
+
+    **Procfile:**
+
+    Make sure you have a Procfile in your project's root directory.
+
+    Include the following command in the Procfile: web: sh setup.sh && streamlit run app.py.
+
+    **Commit and Push to GitHub:**
+
+    Ensure all changes are committed and pushed to your GitHub repository.
+
+    **Deploy from GitHub:**
+
+    In your Heroku dashboard, choose your app and navigate to the 'Deploy' tab.
+
+    Scroll down to the 'Deployment Method' section and select 'GitHub'.
+
+    Connect your GitHub repository to Heroku and choose the main branch.
+
+    Click 'Deploy Branch'.
+
+    **Viewing Deployment:**
+
+    Once the deployment process is complete, your app will be live on Heroku. Click on the 'Open app' in top right corner to access the deployed site and interact with your application
 
 [Table Of Contents](#table-of-contents)
 ********************
