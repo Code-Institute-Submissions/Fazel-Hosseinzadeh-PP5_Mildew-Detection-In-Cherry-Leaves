@@ -12,6 +12,7 @@
 
 1.  [Intrudoction](#intruduction)
 2.  [Dataset Content](#dataset-content)
+3.  [Business Requirements](#business-requirements)
 
 
 ********************
@@ -33,9 +34,57 @@ The dataset utilized in this project is sourced from Kaggle and contains 4208 im
 [Table Of Contents](#table-of-contents)
 ********************
 
+### Business Requirements
 
+**Client:** Farmy & Foods
 
+**Challenge:**
+Farmy & Foods are facing issues with powdery mildew on their cherry plantations. The current method involves manual inspection, where an employee takes about 30 minutes per tree to check for the fungus and an additional minute to apply a fungicide if powdery mildew is detected. This manual process is time-consuming and impractical due to the large number of cherry trees spread across multiple farms.
 
+**Proposed Solution:**
+The IT team has suggested implementing a Machine Learning (ML) system that can instantly detect powdery mildew using images of cherry leaves. If successful, this system could be extended to other crops facing similar issues.
 
+**Summary of Business Requirements:**
 
+1. Study to Visually Differentiate Leaves:
+    * Conduct a study to differentiate healthy cherry leaves from those affected by powdery mildew through visual analysis.
+
+    * This study should include creating average and variability images for each class (healthy vs. powdery mildew).
+
+2. **Prediction of Leaf Health:**
+    *   Develop an ML model capable of predicting whether a cherry leaf is healthy or infected with powdery mildew with at least 97% accuracy.
+
+    *   The model should be able to process images quickly and accurately to facilitate immediate action.
+
+3.  **Dashboard Requirements:**
+
+    *   Develop a responsive dashboard that displays predictions on the health of cherry leaves.
+
+    *   The dashboard should be user-friendly and accessible on various devices.
+
+    *   It should also provide detailed prediction reports for the examined leaves.
+
+4.  **Scalability and Replicability:**
+
+    *   Ensure that the solution is scalable to handle thousands of cherry trees.
+
+    *   If successful, the system should be replicable for other crops and pest detection scenarios.
+
+5.  **Prediction Report:**
+
+    *   Generate a detailed prediction report for each leaf analyzed, indicating whether it is healthy or infected.
+
+    *   Include explanations of possible outcomes to assist users in understanding the predictions.
+
+6.  **Accuracy Requirements:**
+
+    *   The ML system must achieve a minimum prediction accuracy of 97% to be considered successful.
+
+7.  **Technical Considerations:**
+    *   Use a dataset of cherry leaf images provided by Farmy & Foods.
+
+    *   Implement a neural network model to map the relationship between image features and labels (healthy vs. powdery mildew).
+
+[Table Of Contents](#table-of-contents)
+********************
 
