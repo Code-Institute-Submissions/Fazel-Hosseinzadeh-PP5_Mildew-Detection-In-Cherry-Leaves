@@ -19,6 +19,7 @@
 7.  [ML Business Case](#ml-business-case)
 8.  [User Story](#user-story)
 9.  [Dashboard Design Using Streamlit](#dashboard-design-using-streamlit)
+10. [Unfixed Bugs](#unfixed-bugs)
 
 
 ********************
@@ -334,6 +335,15 @@ Details of the model's loss and accuracy scores after training.
 ![Machine Learning Metrics](/readme-images/page5-1.jpg)
 
 ![Machine Learning Metrics](/readme-images/page5-2.jpg)
+
+[Table Of Contents](#table-of-contents)
+********************
+
+####    Unfixed Bugs
+
+*   There are no known unfixed bugs.
+
+
 
 [Table Of Contents](#table-of-contents)
 ********************
