@@ -17,6 +17,8 @@
 5.  [Aligning Business Needs with Visualizations and ML](#aligning-business-needs-with-visualizations-and-ml)
 6.  [Project Workflow CRISP-DM Approach](#project-workflow-crisp-dm-approach)
 7.  [ML Business Case](#ml-business-case)
+8.  [User Story](#user-story)
+
 
 ********************
 
@@ -247,4 +249,21 @@ Farmy & Foods aims to visually differentiate between healthy cherry leaves and t
 
 [Table Of Contents](#table-of-contents)
 ********************
+### User Story
 
+1.  As a client, I want an easy-to-use dashboard to view and understand the data, model, and outcomes.
+2.  As a client, I want to visually differentiate between healthy cherry leaves and those infected with powdery mildew by viewing average and variability images for each classification.
+3.  As a client, I want to understand the visual differences between an average healthy cherry leaf and one infected with powdery mildew.
+4.  As a client, I want to view an image montage displaying both healthy cherry leaves and those infected with powdery mildew for visual differentiation.
+5.  As a client, I want to upload cherry leaf images and receive predictions with over 97% accuracy, enabling quick assessment of cherry tree health.
+6.  As a client, I want a downloadable report summarizing the predictions made by the machine learning model.
+
+*   **Implementation:**
+To address these user stories, we developed an interactive Streamlit dashboard and a Data Visualization notebook. The dashboard offers clients the following functionalities:
+
+    *   Seamless upload of cherry leaf images in .jpeg format, supporting multiple uploads up to 200MB total size.
+    *   Display of uploaded images alongside prediction statements indicating infection status (healthy or infected with powdery mildew) and associated probabilities.
+    *   Provision of a downloadable report summarizing the machine learning predictions on new leaves, facilitating documentation and analysis for future reference.
+
+[Table Of Contents](#table-of-contents)
+********************
