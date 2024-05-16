@@ -16,6 +16,8 @@
 4.  [Hypotheses and how to Validate](#hypotheses-and-how-to-validate)
 5.  [Aligning Business Needs with Visualizations and ML](#aligning-business-needs-with-visualizations-and-ml)
 6.  [Project Workflow CRISP-DM Approach](#project-workflow-crisp-dm-approach)
+7.  [ML Business Case](#ml-business-case)
+
 ********************
 
 ### Intrucudtion
@@ -207,7 +209,7 @@ Farmy & Foods aims to visually differentiate between healthy cherry leaves and t
 
         ![CRISP-DM](/readme-images/crisp-dm.png)
 
-        
+
 4.  **Project Implementation:**
     *   **Business Understanding:**
         Our primary goal is to develop an AI model capable of accurately distinguishing between healthy cherry leaves and those infected with powdery mildew. This addresses the need for an automated solution to replace the time-consuming and error-prone manual inspection process.
@@ -229,6 +231,19 @@ Farmy & Foods aims to visually differentiate between healthy cherry leaves and t
 5.  **Benefits of CRISP-DM:**
     By adhering to the CRISP-DM methodology, we ensure a structured and disciplined approach to our project. This not only facilitates collaboration and communication among team members but also enhances the likelihood of achieving our objectives in a timely and efficient manner. Furthermore, the clear delineation of project phases and tasks provided by CRISP-DM enables effective project management and risk mitigation, ultimately leading to successful project outcomes aligned with business requirements.
 
+
+[Table Of Contents](#table-of-contents)
+********************
+
+### ML Business Case
+
+*   We are developing a supervised machine learning model tailored specifically for classifying cherry leaves as either healthy or infected with powdery mildew. Utilizing a dataset of 4208 images sourced from the client's crop fields via Kaggle, our primary goal is to equip farmers with a swifter and more dependable diagnostic tool.
+
+*   Currently, the detection process relies heavily on manual verification, with workers dedicating around 30 minutes per tree to visually inspect leaves for signs of powdery mildew. This method, however, is both time-consuming and susceptible to human errors, emphasizing the urgent need for an automated solution.
+
+*   Our model will produce a flag indicating leaf health alongside its associated probability, empowering farmers to swiftly identify infected trees and take necessary actions. With a stringent accuracy target of at least 97% on the test set, our aim is to significantly enhance the efficiency and accuracy of the diagnostic process.
+
+*   Through the utilization of machine learning techniques, we anticipate a notable reduction in both the time required and potential inaccuracies associated with manual verification. Ultimately, this initiative will provide farmers with a more reliable means of diagnosing powdery mildew in cherry trees, thereby improving overall crop management practices.
 
 [Table Of Contents](#table-of-contents)
 ********************
