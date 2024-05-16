@@ -21,6 +21,7 @@
 9.  [Dashboard Design Using Streamlit](#dashboard-design-using-streamlit)
 10. [Unfixed Bugs](#unfixed-bugs)
 11. [Deployment](#deployment)
+12. [Credits](#credits)
 
 
 ********************
@@ -433,6 +434,21 @@ Details of the model's loss and accuracy scores after training.
 *   Tensorflow was used as a machine learning library.
 *   Keras was used as a machine learning library.
 *   Heroku was used to deploy the site.
+
+
+[Table Of Contents](#table-of-contents)
+********************
+
+### Credits
+*   Code Institute [Malaria Detector project](https://github.com/Code-Institute-Solutions/WalkthroughProject01) was used extensively as a reference when creating this project.
+
+*   Code Institute [Mildew Detection in Cherry Leaves](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) template was used to create the project.
+
+*   Details of powdery mildew were taken from this [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew) article.
+
+*   CRISP-DM diagram taken from [Data Science Process Alliance](https://www.datascience-pm.com/crisp-dm-2/). 
+
+*   Special thanks to my mentor Mo Shami.
 
 
 [Table Of Contents](#table-of-contents)
