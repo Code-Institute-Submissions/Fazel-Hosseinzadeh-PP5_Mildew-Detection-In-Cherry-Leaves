@@ -15,7 +15,7 @@
 3.  [Business Requirements](#business-requirements)
 4.  [Hypotheses and how to Validate](#hypotheses-and-how-to-validate)
 5.  [Aligning Business Needs with Visualizations and ML](#aligning-business-needs-with-visualizations-and-ml)
-
+6.  [Project Workflow CRISP-DM Approach](#project-workflow-crisp-dm-approach)
 ********************
 
 ### Intrucudtion
@@ -179,3 +179,57 @@ Farmy & Foods aims to visually differentiate between healthy cherry leaves and t
 
 [Table Of Contents](#table-of-contents)
 ********************
+
+### Project Workflow CRISP-DM Approach
+
+1.  **Introduction to CRISP-DM:**
+    CRISP-DM, or the Cross-Industry Standard Process for Data Mining, serves as a structured methodology for guiding data mining projects. It encompasses six distinct stages, each crucial for the successful execution of a data-driven project.
+
+2.  **Utilizing CRISP-DM:**
+    In our cherry leaf disease detection project, CRISP-DM provides the framework through which we organize and execute our tasks. By aligning our project phases with CRISP-DM stages, we ensure a systematic and thorough approach to achieving our objectives.
+
+3.  **CRISP-DM Process Overview:**
+    The CRISP-DM methodology includes the following stages:
+    *   **Business Understanding:**
+        Identifying project objectives and requirements, as well as assessing the current business situation.
+    
+    *   **Data Understanding:**
+        Collecting, exploring, and assessing the quality of the data available for analysis.
+
+    *   **Data Preparation:**
+        Preprocessing, cleaning, and transforming the data into a suitable format for modeling.
+    *   **Modeling:**
+        Selecting appropriate modeling techniques and building predictive models based on the prepared data.
+    *   **Evaluation:**
+        Assessing the performance of the models generated and validating their effectiveness in meeting the project objectives.
+    *   **Deployment:**
+        Integrating the developed models into operational systems for real-world use and ensuring their continued performance and maintenance.
+
+        ![CRISP-DM](/readme-images/crisp-dm.png)
+
+        
+4.  **Project Implementation:**
+    *   **Business Understanding:**
+        Our primary goal is to develop an AI model capable of accurately distinguishing between healthy cherry leaves and those infected with powdery mildew. This addresses the need for an automated solution to replace the time-consuming and error-prone manual inspection process.
+
+    *   **Data Understanding:** We collect and explore a dataset comprising images of cherry leaves, both healthy and infected, to gain insights into the characteristics of each class.
+
+    *   **Data Preparation:**
+        We preprocess and clean the collected data, ensuring its readiness for model training. This involves tasks such as removing noise, handling anomalies, and splitting the data into appropriate sets for training, validation, and testing.
+    
+    *   **Modeling:**
+        We select a convolutional neural network (CNN) as the appropriate model for our image classification task. Using TensorFlow and Keras, we configure and train the model, leveraging techniques such as data augmentation to enhance its robustness.
+    
+    *   **Evaluation:**
+        We evaluate the trained model's performance using various metrics such as accuracy and monitor the learning curve to avoid overfitting and underfitting. Additionally, we test the model on a separate hold-out dataset to assess its generalization capability.
+
+    *   **Deployment:**
+        The final model is integrated into a Streamlit dashboard, providing users with a user-friendly interface for uploading cherry leaf images and obtaining predictions. Visualizations of the dataset and model performance are also included in the dashboard for enhanced insights.
+
+5.  **Benefits of CRISP-DM:**
+    By adhering to the CRISP-DM methodology, we ensure a structured and disciplined approach to our project. This not only facilitates collaboration and communication among team members but also enhances the likelihood of achieving our objectives in a timely and efficient manner. Furthermore, the clear delineation of project phases and tasks provided by CRISP-DM enables effective project management and risk mitigation, ultimately leading to successful project outcomes aligned with business requirements.
+
+
+[Table Of Contents](#table-of-contents)
+********************
+
