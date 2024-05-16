@@ -15,9 +15,9 @@ def page_3_Live_detector_content():
     
     st.write(f"## **Live detector**")
     st.write("---")
-    st.success(f"Easily obtain instant analysis by uploading a photo of a cherry leaf to our machine learning model."
-            f"The analysis yields a brief report showcasing the probability of the leaf being infected or healthy."
-            f"This report is conveniently available for download in CSV format, ensuring quick access and"
+    st.success(f"Easily obtain instant analysis by uploading a photo of a cherry leaf to our machine learning model. "
+            f"The analysis yields a brief report showcasing the probability of the leaf being infected or healthy. "
+            f"This report is conveniently available for download in CSV format, ensuring quick access and "
             f"integration into your workflow.")
     st.write("---")
     st.write(f"* [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) "
